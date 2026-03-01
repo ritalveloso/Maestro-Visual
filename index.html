@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="visual.css" />
+  <title>musica</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.10/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="side-panel left-panel">
+      <h2>Instruções</h2>
+      <ul>
+        <li><span><img src="imagens/1.png" height="50"></span>Playlist 1</li>
+        <li><span><img src="imagens/2.png" height="50"></span>Playlist 2</li>
+        <li><span><img src="imagens/3.png" height="50"></span>Playlist 3</li>
+        <li><span><img src="imagens/play-pause.png" height="50"></span>Play/Pause</li>
+        <li><span><img src="imagens/rock.png" height="50"></span>Próxima Música</li>
+      </ul>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div class="side-panel right-panel">
+      <h2>Estado Atual</h2>
+      <div id="status-container">
+        <p id="dedos-count">Dedos: 0</p>
+        <p id="playlist-name">Playlist: Nenhuma</p>
+        <p id="gesto-ativo">Gesto: ---</p>
+      </div>
+    </div>
+  </div>
+  <script src="musica.js"></script>
+</body>
+
+</html>
